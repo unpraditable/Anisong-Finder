@@ -50,7 +50,7 @@ class AnimeList extends Component {
     }
 
     componentDidMount() {
-        axios.get(`https://api.jikan.moe/v3/season/2020/winter`)
+        axios.get(`https://api.jikan.moe/v3/season/2020/${getSeason(0)}`)
         .then(res => {
             const animes = res.data.anime;
             this.setState({ animes });
