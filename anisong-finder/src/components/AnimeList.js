@@ -57,8 +57,6 @@ class AnimeList extends Component {
         })
     }
 
-    
-
     render () {
         return (
             <div className="App-body row">
